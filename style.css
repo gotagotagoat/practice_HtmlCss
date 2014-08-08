@@ -1,0 +1,522 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*ここまでCSSリセット*/
+
+/*ここから課題部分*/
+div {
+  margin: 10px;
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  font-size: 180%;
+}
+
+h3 {
+  font-size: 160%;
+}
+
+h4 {
+  font-size: 140%;
+}
+
+h5 {
+  font-size: 120%;
+}
+
+h6 {
+  font-size: 110%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #ff007f;
+}
+
+a:visited {
+  color: #000;
+}
+
+div#wrap {
+  width: 960px;
+  margin: 20px auto;
+  background-color: #f5f5f5;
+}
+
+
+/*header*/
+header#header {
+}
+
+header#header h1 {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+  text-shadow: 3px 3px 2px #a9a9a9;
+}
+
+header#header nav#global {
+  width: 960px;
+  margin: 10px;
+}
+
+header#header nav#global ul li {
+  margin: 0 5px;
+  padding: 0 5px;
+  float: left;
+}
+
+header#header nav#global ul li a {
+  display: block;
+  padding: 10px 27px 10px;
+  margin: 5px 0 0;
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+}
+
+
+/*about*/
+div#about {
+  width: 960px;
+  margin: auto;
+  clear: both;
+}
+
+div#about ol li {
+  background-color: #fff;
+  float: left;
+  width: 278px;
+  padding: 10px;
+  margin: 20px 10px 10px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+}
+
+div#about ol li h2 {
+  text-align: center;
+  border-bottom: solid 3px #ff007f;
+  padding-bottom: 10px;
+}
+
+div#about ol li p {
+  padding: 10px 10px 0;
+}
+
+
+/*body*/
+div#body {
+  margin: 10px auto;
+}
+
+
+/*main*/
+div#body div#main {
+  float: left;
+  width: 700px;
+}
+
+
+/*.breadcrumbs*/
+div#body div#main div.breadcrumbs {
+  overflow: hidden;
+  background-color: #fff;
+  width: 530px;
+  border-radius: 10px;
+}
+
+div#body div#main div.breadcrumbs li {
+  float: left;
+}
+
+div#body div#main div.breadcrumbs li a {
+  text-decoration: none;
+  padding: 10px 0 10px 2.5em;
+  background: #fff;
+  position: relative;
+  display: block;
+  float: left;
+}
+
+div#body div#main div.breadcrumbs li a:after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+}
+
+div#body div#main div.breadcrumbs li a:before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #ff007f;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1;
+}
+
+div#body div#main div.breadcrumbs li strong {
+  padding: 10px 40px;
+  display: block;
+}
+
+
+/*articles*/
+div#body div#main div#articles {
+  width: 700px;
+}
+
+div#body div#main div#articles h2 {
+  padding-bottom: 5px;
+  border-bottom: solid 3px #ff007f;
+  margin-bottom: 10px;
+}
+
+div#body div#main div#articles article {
+  background-color: #fff;
+}
+
+div#body div#main div#articles article h3 {
+  padding: 10px 0 0 5px;
+}
+
+div#body div#main div#articles article header span.date {
+  display: block;
+  text-align: right;
+}
+
+div#body div#main div#articles article div.body {
+  padding-top: 10px;
+  border-top: solid 2px #ff007f;
+  border-bottom: solid 2px #ff007f;
+}
+
+div#body div#main div#articles article div.body h4 {
+  margin: 10px;
+  border-left: solid 5px #000;
+  padding: 7px;
+}
+
+div#body div#main div#articles article div.body ul {
+  list-style: disc;
+  margin-left: 40px;
+}
+
+div#body div#main div#articles article div.body ul li {
+  padding: 5px;
+}
+
+div#body div#main div#articles article div.body table {
+  margin: 10px;
+}
+
+div#body div#main div#articles article div.body table tr {
+}
+
+div#body div#main div#articles article div.body table tr th {
+  background: linear-gradient(#fff, #aaa);
+  border: solid 1px #999;
+  padding:10px;
+}
+
+div#body div#main div#articles article div.body table tr td {
+  border: solid 1px #999;
+  padding: 5px;
+}
+
+div#body div#main div#articles article div.body p {
+  padding: 10px;
+}
+
+div#body div#main div#articles article div.body p strong {
+  font-weight: bold;
+}
+
+div#body div#main div#articles article div.body blockquote {
+padding:1em 3em 1em 3em;
+}
+
+div#body div#main div#articles article div.body blockquote:before{
+content: "“";
+    font-size: 24pt;
+    text-align: center;
+    line-height: 42px;
+    color: #fff;
+    background: #ddd;
+    float: left;
+    position: relative;
+    top: -10px;
+    left: -20px;
+    border-radius: 25px;
+
+    /** define it as a block element **/
+    display: block;
+    height: 25px;
+    width: 25px;
+}
+
+blockquote:after {
+    content: "”";
+    font-size: 24pt;
+    text-align: center;
+    line-height: 42px;
+    color: #fff;
+    background: #ddd;
+    float: right;
+    position: relative;
+    bottom: 20px;
+    right: -20px;
+    border-radius: 25px;
+
+    /** define it as a block element **/
+    display: block;
+    height: 25px;
+    width: 25px;
+}
+
+
+
+
+
+
+div#body div#main div#articles article div.body h5 {
+  margin: 13px;
+  border-left: solid 3px #000;
+  padding: 7px;
+}
+
+div#body div#main div#articles article div.body ol {
+  list-style-type: lower-greek;
+  margin-left: 40px;
+}
+
+div#body div#main div#articles article div.body ol li {
+  padding: 5px;
+}
+
+div#body div#main div#articles article div.body h6 {
+  margin: 16px;
+  border-left: solid 2px #000;
+  padding: 7px;
+}
+
+div#body div#main div#articles footer {
+  text-align: right;
+  margin-right: 10px;
+}
+
+div#body div#main div#articles footer dl dt {
+  position: relative;
+  right: 20%;
+}
+
+div#body div#main div#articles footer dl dt,dd {
+  padding: 3px;
+}
+
+/*comments*/
+div#body div#main aside#comments {
+  width: 700px;
+  background-color: #fff;
+  margin: 10px;
+}
+
+div#body div#main aside#comments h3 {
+  padding: 10px 0 10px 10px;
+}
+
+div#body div#main aside#comments ul {
+}
+
+div#body div#main aside#comments ul li {
+  padding: 10px 0 10px 10px;
+  margin-bottom: 5px;
+  border-bottom: dashed 2px #666;
+}
+
+div#body div#main aside#comments ul li p {
+  width: 600px;
+  margin: 0 auto;
+  padding: 8px 0;
+  border: 1px solid #aaa;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+}
+
+div#body div#main aside#comments ul li p:before {
+  content: "";
+  border: 12px solid transparent;
+  border-top: 12px solid #fff;
+  position: absolute;
+  left: 5%;
+  bottom: -23px;
+  z-index: 2
+}
+
+div#body div#main aside#comments ul li p:after {
+  content: "";
+  border: 12px solid transparent;
+  border-top: 12px solid #aaa;
+  position: absolute;
+  left: 5%;
+  bottom: -24px;
+  z-index: 1
+}
+
+div#body div#main aside#comments ul li dl {
+  padding-top: 15px;
+}
+
+div#body div#main aside#comments ul li dl dt {
+  position: relative;
+  left: 5%;
+}
+
+div#body div#main aside#comments ul li dl dd {
+  position: relative;
+  left: 10%;
+}
+
+
+/*clearfix*/
+div#body div#sub :before{
+  content: ".";
+  display: block;
+  height: 0;
+  font-size:0;
+  clear: both;
+  visibility:hidden;
+}
+
+
+/*sub*/
+div#body div#sub {
+  float: right;
+  width: 220px;
+  margin: 10px;
+}
+
+div#body div#sub aside.ad p {
+  height: 300px;
+  background-color: #ff007f;
+}
+
+div#body div#sub nav#local ul {
+  margin:10px 0;
+  background-color: #fff;
+}
+
+div#body div#sub nav#local ul li a {
+  display: block;
+  padding: 10px;
+  border-bottom: solid 1px #ff007f;
+}
+
+div#body div#sub aside.banners ul li a {
+  display: block;
+  background-color: #fff;
+  height: 500px;
+  margin: 10px 0;
+}
+
+/*footer*/
+footer#footer {
+  clear: both;
+  color: #fff;
+  background-color: #333;
+  margin: 20px auto;
+  padding: 30px 0;
+}
+
+footer#footer nav ul {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  float: left;
+}
+
+footer#footer nav ul li {
+  padding: 10px;
+}
+
+
+footer#footer nav ul li {
+  position: relative;
+  left: -50%;
+  float: left;
+  }
+
+footer#footer nav ul li a:visited {
+  color: #fff;
+}
+
+footer#footer nav p {
+  clear: both;
+  text-align: center;
+}
